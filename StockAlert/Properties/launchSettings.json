@@ -1,0 +1,15 @@
+{
+  "profiles": {
+    "StockAlert": {
+      "commandName": "Project",
+      "commandLineArgs": "VALE3 78.2 78.0",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    },
+    "WSL": {
+      "commandName": "WSL2",
+      "distributionName": ""
+    }
+  }
+}
