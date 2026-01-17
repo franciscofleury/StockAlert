@@ -1,6 +1,6 @@
 # StockAlert
 
-StockAlert é um framework leve de monitoramento e alerta originalmente desenvolvido para monitorar cotações da B3, mas projetado para funcionar com qualquer fonte de dados que forneça payloads no formato &IStockInfo&. O sistema é modular: providers fornecem dados, serviços de monitoramento aplicam regras e geradores de alertas (alert services) enviam notificações por diferentes canais (SMTP, MQTT, console, etc.). A aplicação é construída com .NET 10 e usa injeção de dependência, padrão `IOptions` e `BackgroundService` para workers.
+StockAlert é um framework leve de monitoramento e alerta originalmente desenvolvido para monitorar cotações da B3, mas projetado para funcionar com qualquer fonte de dados que forneça payloads no formato `IStockInfo`. O sistema é modular: providers fornecem dados, serviços de monitoramento aplicam regras e geradores de alertas (alert services) enviam notificações por diferentes canais (SMTP, MQTT, console, etc.). A aplicação é construída com .NET 10 e usa injeção de dependência, padrão `IOptions` e `BackgroundService` para workers.
 ---
 
 Documento explicando racioncínio, experimentos e decisões sobre o desenvolvimento do projeto:
@@ -12,13 +12,13 @@ Para utilizar a aplicação, é necessário configurar o ambiente e executar a v
 
 ### 1. Configuração (appsettings.json)
 
-Antes de executar qualquer binário, você **deve** preencher o arquivo &appsettings.json& localizado na mesma pasta do executável. O sistema valida essas configurações na inicialização e falhará se estiverem incorretas.
+Antes de executar qualquer binário, você **deve** preencher o arquivo `appsettings.json` localizado na mesma pasta do executável. O sistema valida essas configurações na inicialização e falhará se estiverem incorretas.
 
 Consulte a seção **"Exemplos de seções do appsettings.json"** no final deste documento para copiar os modelos de configuração.
 
 ### 2. Execução
 
-Navegue até a pasta `executaveis`. Lá você encontrará diferentes arquivos &.exe&, onde cada um representa uma **Versão Final** (combinação específica de Provider + Worker).
+Navegue até a pasta `executaveis`. Lá você encontrará diferentes arquivos `.exe`, onde cada um representa uma **Versão Final** (combinação específica de Provider + Worker).
 
 Abra o terminal (CMD ou PowerShell) e execute o programa utilizando o seguinte formato:
 
