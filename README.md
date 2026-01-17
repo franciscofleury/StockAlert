@@ -1,8 +1,10 @@
 # StockAlert
 
-StockAlert é um framework leve de monitoramento e alerta originalmente desenvolvido para monitorar cotações da B3, mas projetado para funcionar com qualquer fonte de dados que forneça payloads no formato &IStockInfo&. O sistema é modular: providers fornecem dados, serviços de monitoramento aplicam regras e geradores de alertas (alert services) enviam notificações por diferentes canais (SMTP, MQTT, console, etc.). A aplicação é construída com .NET 10 e usa injeção de dependência, padrão &IOptions& e &BackgroundService& para workers.
-
+StockAlert é um framework leve de monitoramento e alerta originalmente desenvolvido para monitorar cotações da B3, mas projetado para funcionar com qualquer fonte de dados que forneça payloads no formato &IStockInfo&. O sistema é modular: providers fornecem dados, serviços de monitoramento aplicam regras e geradores de alertas (alert services) enviam notificações por diferentes canais (SMTP, MQTT, console, etc.). A aplicação é construída com .NET 10 e usa injeção de dependência, padrão `IOptions` e `BackgroundService` para workers.
 ---
+
+Documento explicando racioncínio, experimentos e decisões sobre o desenvolvimento do projeto:
+https://drive.google.com/file/d/11-hzBh4NbbdDnQbVcTT4aT-w0s1aK4zj/view?usp=sharing
 
 ## Guia de Uso Rápido
 
