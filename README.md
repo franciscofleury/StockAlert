@@ -18,7 +18,7 @@ Consulte a seção **"Exemplos de seções do appsettings.json"** no final deste
 
 ### 2. Execução
 
-Navegue até a pasta &executaveis&. Lá você encontrará diferentes arquivos &.exe&, onde cada um representa uma **Versão Final** (combinação específica de Provider + Worker).
+Navegue até a pasta `executaveis`. Lá você encontrará diferentes arquivos &.exe&, onde cada um representa uma **Versão Final** (combinação específica de Provider + Worker).
 
 Abra o terminal (CMD ou PowerShell) e execute o programa utilizando o seguinte formato:
 
